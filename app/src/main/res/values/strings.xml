@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">shopping</string>
+    <string name="title_item_detail">Product Detail</string>
+    <string name="product_photo">Product photo</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="in_stock">In Stock</string>
+    <string name="not_available">Out Of Stock</string>
+    <string name="loading">Loading…</string>
+    <string name="dollar_sign">$</string>
+</resources>
