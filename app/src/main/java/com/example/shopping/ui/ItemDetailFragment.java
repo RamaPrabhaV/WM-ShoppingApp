@@ -111,7 +111,7 @@ public class ItemDetailFragment extends Fragment {
 
         buttonAddToCart.setEnabled(currentItem.getInStock());
         buttonAddToCart.setOnClickListener(v -> {
-            Toast.makeText(v.getContext(), "1 item added to cart", Toast.LENGTH_LONG).show();
+            Toast.makeText(v.getContext(),R.string.item_added, Toast.LENGTH_SHORT).show();
         });
     }
 

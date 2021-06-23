@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.shopping.Constants;
+import com.example.shopping.R;
 import com.example.shopping.databinding.ItemListContentBinding;
 
 import androidx.annotation.NonNull;
@@ -78,7 +79,7 @@ public class ItemsListAdapter extends RecyclerView.Adapter<ItemsListAdapter.Prod
         holder.ratingBar.setRating(product.getReviewRating());
         holder.textViewNumberOfReviews.setText(String.format("%s%s%s", "(", product.getReviewCount(), ")"));
         holder.buttonAddToCart.setEnabled(product.getInStock());
-        holder.buttonAddToCart.setOnClickListener(v -> Toast.makeText(v.getContext(), "1 item added to cart", Toast.LENGTH_LONG).show());
+        holder.buttonAddToCart.setOnClickListener(v -> Toast.makeText(v.getContext(), R.string.item_added, Toast.LENGTH_SHORT).show());
     }
 
     @Override
